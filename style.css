@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/* font-family: 'Public Sans', sans-serif; */
+/* font-family: 'Caveat', cursive; */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    color:black;
+}
+
+header {
+    position:relative;
+    height: 100vh;
+    background-image: url(photos/tło1.jpg);
+    background-size: cover;
+    background-color:rgba(250,250,250,0.52);
+ 
+}
+
+nav.menu{
+    margin: 0px auto 0;
+    padding-top: 4%;
+    max-width: 1000px;
+}
+
+ul.menu{
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(215, 144, 135, 0.5);
+
+}
+ul.menu li{
+    flex: 1;
+    
+}
+ul.menu li a{
+    display: inline-block;
+    padding: 10px 5px;
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+ul.menu li a:hover{
+    background-color: rgb(215, 144, 135);
+}
+
+p.witaj{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    font-family: 'Caveat', cursive;
+    font-size: 130px;
+}
+h1.name{
+    position:absolute;
+    left: 10%;
+    top: 60%;
+    font-size: 30px;
+}
+p.job{
+    position: absolute;
+    left:10%;
+    top: 67%;
+    font-size:30px;
+}
+button.b_portfolio{
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    padding: 5px 15px;
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    border: 5px solid rgba(215, 144, 135, 0.5);
+    background-color:transparent;
+    transition: 0.3s;
+}
+button.b_portfolio:hover{
+    border-color: rgb(215, 144, 135);
+    cursor: pointer;
+}
+img.komputer{
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    width: 40vw;
+    border-color: rgba(215, 144, 135, 0.5);
+    border-width: 8px 10px;
+    border-style: solid;
+
+}
+
+/* li.home{
+    background-color: goldenrod;
+}
+li.o_mnie{
+    background-color: pink;
+}
+li.portfolio{
+    background-color: darkolivegreen;
+}
+li.dlaczego_ja{
+    background-color: rosybrown;
+}
+li.hobby{
+    background-color: peachpuff;
+}
+li.kontakt{
+    background-color: peru;
+} */
