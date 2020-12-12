@@ -68,7 +68,8 @@ p.job{
     top: 67%;
     font-size:30px;
 }
-button.b_portfolio{
+a.button{
+    display: inline-block;
     position: absolute;
     left: 20%;
     top: 80%;
@@ -77,9 +78,10 @@ button.b_portfolio{
     font-size: 40px;
     border: 5px solid rgba(215, 144, 135, 0.5);
     background-color:transparent;
+    text-decoration: none;
     transition: 0.3s;
 }
-button.b_portfolio:hover{
+a.button:hover{
     border-color: rgb(215, 144, 135);
     cursor: pointer;
 }
@@ -150,7 +152,7 @@ section.portfolio div.elementy{
 div.elementy div.p_element{
     width: 30%;
     height: 50vh;
-    background-image: url(photos/portfolio1.jpg);
+    background-image: url(photos/portfolio.jpg);
     background-size: cover;
 }
 
