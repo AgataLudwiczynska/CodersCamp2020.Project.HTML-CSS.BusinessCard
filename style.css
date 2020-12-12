@@ -18,7 +18,6 @@ header {
     height: 100vh;
     background-image: url(photos/tło1.jpg);
     background-size: cover;
-    background-color:rgba(250,250,250,0.52);
  
 }
 
@@ -124,6 +123,74 @@ section.o_mnie img{
     border-color: rgba(215, 144, 135, 0.5);
     border-width: 30px 15px 15px 30px;
     border-style: solid;
+}
+
+section.portfolio{
+    background-color: #F4F3F1;
+    /* background-image: url(photos/tło1.jpg);
+    background-size: cover; */
+}
+
+section.portfolio h1{
+    padding: 20px;
+    font-size: 100px;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+section.portfolio div.elementy{
+    margin-top: 7%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.elementy div.p_element{
+    width: 30%;
+    height: 50vh;
+    background-image: url(photos/portfolio1.jpg);
+    background-size: cover;
+}
+
+div.elementy div.p_element aside{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(215, 144, 135, 0.5);
+    height: 100%;
+    opacity:0;
+    transition: 0.4s;
+   
+}
+
+div.elementy div.p_element:hover aside{
+    opacity: 100%;
+}
+
+
+div.p_element aside h2{
+    align-self: center;
+}
+
+div.p_element aside p{
+    text-align: justify;
+}
+
+div.p_element aside button{
+    padding: 5px 8px;
+    border: #111 solid 2px;
+    background-color: transparent;
+    align-self: center;
+    transition: 0.3s;
+    
+}
+div.p_element aside button:hover{
+    /* background-color: rgba(244, 243, 241, 0.5); */
+    background-color:  rgba(215, 144, 135, 0.5);
+    cursor: pointer;
 }
 /* li.home{
     background-color: goldenrod;
