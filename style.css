@@ -92,9 +92,39 @@ img.komputer{
     border-color: rgba(215, 144, 135, 0.5);
     border-width: 8px 10px;
     border-style: solid;
-
 }
 
+section.o_mnie{
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: 10% auto;
+    grid-gap: 10%;
+    background-color: #F4F3F1;
+    padding:20px 5% 0 5%;
+    height: 100vh;
+}
+section.o_mnie h1{
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    font-size: 100px;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+section.o_mnie div.opis{
+    grid-row-end: -1;
+    grid-column-start: 1;
+    align-self: center;
+    text-align: justify;
+}
+section.o_mnie img{
+    grid-row: span 2/-1;
+    width: 100%;
+    align-self: center;
+    border-color: rgba(215, 144, 135, 0.5);
+    border-width: 30px 15px 15px 30px;
+    border-style: solid;
+}
 /* li.home{
     background-color: goldenrod;
 }
