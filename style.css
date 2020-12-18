@@ -128,6 +128,9 @@ img.komputer{
     }
 }
 @media (orientation: landscape) and (max-width: 832px){
+    nav.menu{
+        padding-top: 1%;
+    }
     a.button{
         top: 77%;
     }
@@ -192,7 +195,8 @@ img.komputer{
     }
     div.text{
         text-align: center;
-        left:17.5%;
+        width: 100%;
+        left:0%;
     }
     p.witaj{
         font-size: 160px;
@@ -207,16 +211,13 @@ img.komputer{
     }
     img.komputer{
         width: 80vw;
-        top: 55%;
+        top: 57%;
         right:10%;
     }
 }
 @media (orientation: portrait) and (max-width: 950px){
     ul.menu li a{
         font-size: 20px;
-    }
-    div.text{
-        left:12%;
     }
     p.witaj{
         font-size: 150px;
@@ -226,34 +227,61 @@ img.komputer{
     }
     a.button{
         font-size: 40px;
-        left:35%;
         top: 85%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 700px){
+    nav.menu{
+        padding-top: 3%;
+    }
+    ul.menu li a{
+        font-size: 16px;
+    }
+    div.text{
+        top: 5%;
+    }
+    p.witaj{
+        padding-bottom: 5%;
+        font-size: 100px;
+    }
+    p.job, h1.name{
+        font-size: 20px;
+    }
+    a.button{
+        font-size: 25px;
+    }
+    img.komputer{
+        width: 60vw;
+        right:20%;
+        bottom: 5%;
+        top: auto;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 500px){
+    ul.menu li a{
+        font-size: 14px;
+    }
+    a.button{
+        left:30.5%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 450px){
+    nav.menu{
+        padding-top: 5%;
+    }
+    ul.menu li a{
+        font-size: 16px;
     }
     img.komputer{
         width: 80vw;
-        top: 55%;
         right:10%;
+        bottom: 5%;
+        top: auto;
     }
 }
-/* @media(max-width:950px){
-    p.witaj{
-        font-size: 115px;
-    }
-    p.job, h1.name{
-        font-size: 25px;
-    }
-    p.job{
-        top:64%
-    }
-    a.button{
-        top: 84%
-        font-size: 35px;
-        border-width: 3px 5px;
-    }
-    img.komputer{
-        top:35%;
-    }
-} */
 
 section.o_mnie{
     display: grid;
