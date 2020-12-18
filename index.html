@@ -13,29 +13,32 @@
 
 <body>
 <header>
-<nav class="menu">
-    <ul class="menu">
-        <li><a href="#o_mnie">O mnie</a></li>
-        <li><a href="#portfolio">Moje portfolio</a></li>
-        <li><a href="#">Dlaczego ja</a></li>
-        <li><a href="#">Moje hobby</a></li>
-        <li><a href="#">Kontakt</a></li>
-    </ul>
-</nav>
-<p class="witaj">Witaj!</p>
-<h1 class="name">Jestem Agata Ludwiczyńska,</h1>
-<p class="job">web developer - freelancer</p>
-<!-- <button class="b_portfolio" >Moje portfolio</button> -->
-<a class="button" href="#portfolio">Moje portfolio</a>
-<img class="komputer" src="photos/komputer.jpg" alt="Komputer">
+    <nav class="menu">
+        <ul class="menu">
+            <li><a href="#o_mnie">O mnie</a></li>
+            <li><a href="#portfolio">Moje portfolio</a></li>
+            <li><a href="#">Dlaczego ja</a></li>
+            <li><a href="#">Moje hobby</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="text">
+            <p class="witaj">Witaj!</p>
+            <h1 class="name">Jestem Agata Ludwiczyńska,</h1>
+            <p class="job">web developer - freelancer</p>
+        </div>
+        <a class="button" href="#portfolio">Moje portfolio</a>
+    </div>
+    <img class="komputer" src="photos/komputer.jpg" alt="Komputer">
 </header>
 <section class="o_mnie" id="o_mnie">
-<h1>O mnie</h1>
-<div class="opis">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quos mollitia esse, modi itaque aut enim, repudiandae magnam saepe repellat in! Assumenda rerum perspiciatis fuga aperiam voluptatum, exercitationem tempora harum.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi unde quo in, quia nulla possimus odit error nostrum dolorem quidem, molestiae tenetur quam maiores. Libero expedita esse nisi ullam exercitationem.</p>
-</div>
-<img class="zdjecie" src="photos/ja.JPG" alt="To ja">
+    <h1>O mnie</h1>
+    <div class="opis">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quos mollitia esse, modi itaque aut enim, repudiandae magnam saepe repellat in! Assumenda rerum perspiciatis fuga aperiam voluptatum, exercitationem tempora harum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi unde quo in, quia nulla possimus odit error nostrum dolorem quidem, molestiae tenetur quam maiores. Libero expedita esse nisi ullam exercitationem.</p>
+    </div>
+    <img class="zdjecie" src="photos/ja.JPG" alt="To ja">
 </section>
 <section class="portfolio" id="portfolio">
     <h1>Moje portfolio</h1>
@@ -62,6 +65,13 @@
             </aside>
         </div>
     </div>
+</section>
+<section class="kontakt" id="kontakt">
+    <h1>Kontakt</h1>
+    <form action="">
+        <label>Imię: <input type="text" name="firstname"></label>
+        <label>Nazwisko: <input type="text" name="lastname"></label>
+    </form>
 </section>
 </body>
 </html>
