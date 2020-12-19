@@ -286,16 +286,17 @@ img.komputer{
 section.o_mnie{
     display: grid;
     grid-template-columns: 40% auto;
-    grid-template-rows: 10% auto;
+    grid-template-rows: 12% auto;
     grid-gap: 10%;
     background-color: #F4F3F1;
     padding:20px 5% 0 5%;
     height: 100vh;
 }
 section.o_mnie h1{
-    grid-row: 1;
-    grid-column: 1;
+    grid-row-start: 1;
+    grid-column: span 2/-1;
     justify-self: center;
+    padding-bottom: 10px;
     font-size: 100px;
     font-family: 'Caveat', cursive;
     font-weight: 400;
@@ -307,13 +308,45 @@ section.o_mnie div.opis{
     text-align: justify;
 }
 section.o_mnie img{
-    grid-row: span 2/-1;
+    grid-row-end: -1;
+    grid-column-start: 2;
     width: 100%;
     align-self: center;
     border-color: rgba(215, 144, 135, 0.5);
     border-width: 30px 15px 15px 30px;
     border-style: solid;
 }
+
+
+@media (orientation: landscape) and (max-width: 850px){
+    section.o_mnie h1{
+        font-size: 80px;
+    }
+    section.o_mnie div.opis p{
+        font-size: 16px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 670px){
+    section.o_mnie{
+        grid-template-columns: 50% auto;
+    }
+    section.o_mnie h1{
+        font-size: 60px;
+    }
+    section.o_mnie div.opis p{
+        font-size: 14px;
+    }
+    section.o_mnie img{
+    border-width: 15px 7px 7px 15px;
+    }
+}
+@media (orientation: landscape) and (max-width: 600px){
+    section.o_mnie h1{
+        font-size: 55px;
+    }
+}
+
 
 section.portfolio{
     background-color: #F4F3F1;
