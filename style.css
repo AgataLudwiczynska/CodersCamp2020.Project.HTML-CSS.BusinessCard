@@ -513,7 +513,7 @@ div.p_element aside button:hover{
     }
 }
 
-@media (max-width: 670px){
+@media (orientation: landscape) and (max-width: 670px){
     section.portfolio h1{
         font-size: 90px;
     }
@@ -618,5 +618,94 @@ div.p_element aside button:hover{
     div.p_element aside button{
         font-size: 11px;
         padding: 3px 6px;
+    }
+}
+
+@media(orientation: portrait){
+    section.portfolio h1{
+        padding-top: 50px;
+    }
+    section.portfolio div.elementy{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+    div.elementy div.p_element{
+        width: 100%;
+    }
+}
+
+@media (hover: none) and (orientation: portrait){
+    div.elementy div.p_element{
+        position: relative;
+        height: 80vh;
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+    }
+    div.elementy div.p_element aside{
+        position: absolute;
+        top: 50%;
+        height: 50%;
+        opacity: 100%;
+    }
+    div.p_element aside h2{
+        font-size: 38px;
+    }
+    div.p_element aside p{
+        font-size: 36px;
+    }
+    div.p_element aside button{
+        font-size: 38px;
+    }
+}
+
+@media (hover: none) and (orientation: portrait) and (max-width: 950px){
+    div.p_element aside h2{
+        font-size: 34px;
+    }
+    div.p_element aside p{
+        font-size: 32px;
+    }
+    div.p_element aside button{
+        font-size: 34px;
+    }
+}
+
+@media (hover: none) and (orientation: portrait) and (max-width: 700px){
+    div.p_element aside h2{
+        font-size: 24px;
+    }
+    div.p_element aside p{
+        font-size: 22px;
+    }
+    div.p_element aside button{
+        font-size: 24px;
+    }
+}
+
+@media (hover: none) and (orientation: portrait) and (max-width: 500px){
+    section.portfolio h1{
+        font-size: 60px;
+    }
+    div.p_element aside h2{
+        font-size: 18px;
+    }
+    div.p_element aside p{
+        font-size: 16px;
+    }
+    div.p_element aside button{
+        font-size: 18px;
+    }
+}
+
+@media (hover: none) and (orientation: portrait) and (max-width: 320px){
+    div.p_element aside h2{
+        font-size: 16px;
+    }
+    div.p_element aside p{
+        font-size: 14px;
+    }
+    div.p_element aside button{
+        font-size: 16px;
     }
 }
