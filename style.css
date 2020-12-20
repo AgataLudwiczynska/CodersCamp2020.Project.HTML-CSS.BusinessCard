@@ -414,7 +414,7 @@ section.o_mnie img{
         font-size: 80px;
     }
     section.o_mnie div.opis p{
-        font-size: 18px;
+        font-size: 16px;
     }
     section.o_mnie img{
     border-width: 20px 10px 10px 20px;
@@ -433,12 +433,10 @@ section.o_mnie img{
 
 section.portfolio{
     background-color: #F4F3F1;
-    /* background-image: url(photos/tło1.jpg);
-    background-size: cover; */
 }
 
 section.portfolio h1{
-    padding: 20px;
+    padding: 30px 20px 20px;
     font-size: 100px;
     font-family: 'Caveat', cursive;
     font-weight: 400;
@@ -469,13 +467,11 @@ div.elementy div.p_element aside{
     height: 100%;
     opacity:0;
     transition: 0.4s;
-   
 }
 
 div.elementy div.p_element:hover aside{
     opacity: 100%;
 }
-
 
 div.p_element aside h2{
     align-self: center;
@@ -490,30 +486,137 @@ div.p_element aside button{
     border: #111 solid 2px;
     background-color: transparent;
     align-self: center;
-    transition: 0.3s;
-    
+    transition: 0.3s;  
 }
+
 div.p_element aside button:hover{
     /* background-color: rgba(244, 243, 241, 0.5); */
     background-color:  rgba(215, 144, 135, 0.5);
     cursor: pointer;
 }
 
-/* li.home{
-    background-color: goldenrod;
+@media (orientation: landscape) and (max-width: 1000px){
+    div.p_element aside p{
+        font-size: 18px;
+    }
 }
-li.o_mnie{
-    background-color: pink;
+
+@media (orientation: landscape) and (max-width: 850px){
+    div.p_element aside h2{
+        font-size: 18px;
+    }
+    div.p_element aside p{
+        font-size: 16px;
+    }
+    div.p_element aside button{
+        font-size: 18px;
+    }
 }
-li.portfolio{
-    background-color: darkolivegreen;
+
+@media (max-width: 670px){
+    section.portfolio h1{
+        font-size: 90px;
+    }
+    div.p_element aside h2{
+        font-size: 16px;
+    }
+    div.p_element aside p{
+        font-size: 14px;
+    }
+    div.p_element aside button{
+        font-size: 16px;
+    }
 }
-li.dlaczego_ja{
-    background-color: rosybrown;
+@media (hover: none) and (orientation: landscape){
+    div.elementy div.p_element{
+        position: relative;
+        width: 80%;
+        background-size: 50%;
+        background-repeat: no-repeat;
+    }
+    div.elementy div.p_element aside{
+        position: absolute;
+        left: 60%;
+        height: 90%;
+        opacity: 100%;
+    }
+    div.p_element aside h2{
+        font-size: 26px;
+    }
+    div.p_element aside p{
+        font-size: 24px;
+    }
+    div.p_element aside button{
+        font-size: 26px;
+    }
 }
-li.hobby{
-    background-color: peachpuff;
+
+@media (hover: none) and (orientation: landscape) and (max-width: 1200px){
+    div.p_element aside h2{
+        font-size: 22px;
+    }
+    div.p_element aside p{
+        font-size: 20px;
+    }
+    div.p_element aside button{
+        font-size: 22px;
+    }
 }
-li.kontakt{
-    background-color: peru;
-} */
+
+@media (hover: none) and (orientation: landscape) and (max-width: 1000px){
+    div.p_element aside h2{
+        font-size: 20px;
+    }
+    div.p_element aside p{
+        font-size: 18px;
+    }
+    div.p_element aside button{
+        font-size: 20px;
+    }
+}
+
+@media (hover: none) and (orientation: landscape) and (max-width: 850px){
+    section.portfolio h1{
+        font-size: 60px;
+    }
+    div.elementy div.p_element{
+        background-size: 40%;
+    }
+    div.elementy div.p_element aside{
+        left: 50%;
+    }
+    div.p_element aside h2{
+        font-size: 17px;
+    }
+    div.p_element aside p{
+        font-size: 15px;
+    }
+    div.p_element aside button{
+        font-size: 15px;
+    }
+}
+
+@media (hover: none) and (orientation: landscape) and (max-width: 670px){
+    div.p_element aside h2{
+        font-size: 15px;
+    }
+    div.p_element aside p{
+        font-size: 12px;
+    }
+    div.p_element aside button{
+        font-size: 12px;
+        border-width: 1px;
+    }
+}
+@media (hover: none) and (orientation: landscape) and (max-width: 600px){
+    div.p_element aside h2{
+        font-size: 14px;
+    }
+    div.p_element aside p{
+        font-size: 11px;
+    }
+    div.p_element aside button{
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+}
