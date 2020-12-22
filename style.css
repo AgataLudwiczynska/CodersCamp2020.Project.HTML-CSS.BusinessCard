@@ -348,6 +348,10 @@ textarea.tresc{
     div.p_element aside button{
         font-size: 18px;
     }
+    /* section kontakt */
+    label{
+        font-size: 16px;
+    }
 }
 @media (orientation: landscape) and (max-width: 832px){
     /* header */
@@ -475,7 +479,7 @@ textarea.tresc{
         font-size: 17px;
     }
     div.p_element aside p{
-        font-size: 15px;
+        font-size: 13px;
     }
     div.p_element aside button{
         font-size: 15px;
@@ -486,7 +490,7 @@ textarea.tresc{
         font-size: 15px;
     }
     div.p_element aside p{
-        font-size: 12px;
+        font-size: 10px;
     }
     div.p_element aside button{
         font-size: 12px;
@@ -501,7 +505,7 @@ textarea.tresc{
         font-size: 14px;
     }
     div.p_element aside p{
-        font-size: 11px;
+        font-size: 9px;
     }
     div.p_element aside button{
         font-size: 11px;
