@@ -5,6 +5,8 @@ Demo mojego projektu: https://agataludwiczynska.github.io/CodersCamp2020.Project
 
 Strona ta jest szablonem portfolio, który jest w pełni responsywny, dzięki czemu dobrze wygląda na różynych urządzeniach. 
 
+![./photos/mockup.png](./photos/mockup.png)
+
 Na stronie znajdziemy nagłówek z menu, które prowadzi nas do poszczególnych sekcji strony.
 
 ![./photos/Naglowek_z_menu.png](./photos/Naglowek_z_menu.png)
