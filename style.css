@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Public+Sans&display=swap');
 
 /* font-family: 'Public Sans', sans-serif; */
 /* font-family: 'Caveat', cursive; */
@@ -13,6 +12,19 @@
     color:black;
     scroll-behavior: smooth;
 }
+
+h1.naglowek {
+    font-size: 100px;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    text-shadow: 2px 2px rgb(215, 144, 135);
+}
+
+i{
+    padding-right: 3px;
+}
+
+/* Section header */
 
 header {
     position:relative;
@@ -59,20 +71,15 @@ div.text{
     top: 10%;
 }
 p.witaj{
-    /* position: absolute;
-    top: 15%; */
     padding-bottom:10%;
     font-family: 'Caveat', cursive;
     font-size: 130px;
+    text-shadow: 2px 2px rgb(215, 144, 135);
 }
 h1.name{
-    /* position:absolute;
-    top: 50%; */
     font-size: 30px;
 }
 p.job{
-    /* position: absolute;
-    top: 57%; */
     font-size:30px;
 }
 a.button{
@@ -102,203 +109,8 @@ img.komputer{
     border-style: solid;
 }
 
-@media (orientation: landscape) and (max-width: 1200px){
-    img.komputer{
-        right: 7%;
-    }
-    div.content{
-        left:7%;
-    }
-}
 
-@media (orientation: landscape) and (max-width: 1000px){
-    
-    p.witaj{
-        font-size: 115px;
-    }
-    p.job, h1.name{
-        font-size: 25px;
-    }
-    a.button{
-        font-size: 35px;
-        border-width: 3px 5px;
-    }
-    img.komputer{
-        top:35%;
-    }
-}
-@media (orientation: landscape) and (max-width: 832px){
-    nav.menu{
-        padding-top: 1%;
-    }
-    a.button{
-        top: 77%;
-    }
-}
-@media (orientation: landscape) and (max-width: 850px){
-    div.text{
-        top:5%;
-    }
-    div.text p.witaj{
-        font-size: 100px;
-    }
-    p.job, h1.name{
-        font-size: 20px;
-    }
-    a.button{
-        font-size: 30px;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 670px){
-    ul.menu li a{
-        font-size: 18px;
-    }
-    div.text p.witaj{
-        padding-bottom: 7%;
-        font-size: 80px;
-    }
-    p.job, h1.name{
-        font-size: 18px;
-    }
-    a.button{
-        font-size: 25px;
-    }
-    img.komputer{
-        border-width: 5px 7px;
-    }
-}
-@media (orientation: landscape) and (max-width: 600px){
-    ul.menu li a{
-        font-size: 14px;
-    }
-    div.text p.witaj{
-        padding-bottom: 10%;
-        font-size: 65px;
-    }
-    p.job, h1.name{
-        font-size: 16px;
-    }
-    a.button{
-        font-size: 20px;
-        border-width: 2px 4px;
-    }
-}
-
-@media(orientation: portrait){
-    ul.menu li a{
-        font-size: 25px;
-    }
-    div.content{
-        width: 80vw;
-        height: 45vh;
-    }
-    div.text{
-        text-align: center;
-        width: 100%;
-        left:0%;
-    }
-    p.witaj{
-        font-size: 160px;
-    }
-    p.job, h1.name{
-        font-size: 40px;
-    }
-    a.button{
-        font-size: 45px;
-        left:35%;
-        top: 75%;
-    }
-    img.komputer{
-        width: 80vw;
-        top: 57%;
-        right:10%;
-    }
-}
-@media (orientation: portrait) and (max-width: 950px){
-    ul.menu li a{
-        font-size: 20px;
-    }
-    p.witaj{
-        font-size: 150px;
-    }
-    p.job, h1.name{
-        font-size: 35px;
-    }
-    a.button{
-        font-size: 40px;
-        top: 85%;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 700px){
-    nav.menu{
-        padding-top: 3%;
-    }
-    ul.menu li a{
-        font-size: 16px;
-    }
-    div.text{
-        top: 5%;
-    }
-    p.witaj{
-        padding-bottom: 5%;
-        font-size: 100px;
-    }
-    p.job, h1.name{
-        font-size: 20px;
-    }
-    a.button{
-        font-size: 25px;
-    }
-    img.komputer{
-        width: 60vw;
-        right:20%;
-        bottom: 5%;
-        top: auto;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 500px){
-    ul.menu li a{
-        font-size: 14px;
-    }
-    a.button{
-        left:30.5%;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 450px){
-    nav.menu{
-        padding-top: 5%;
-    }
-    ul.menu li a{
-        font-size: 16px;
-    }
-    img.komputer{
-        width: 80vw;
-        right:10%;
-        bottom: 5%;
-        top: auto;
-    }
-}
-@media (orientation: portrait) and (max-width: 320px){
-    ul.menu li a{
-        font-size: 14px;
-    }
-    p.witaj{
-        font-size: 80px;
-    }
-    p.job, h1.name{
-        font-size: 18px;
-    }
-    a.button{
-        border-width: 2px 4px;
-    }
-    img.komputer{
-        border-width: 5px 7px;
-    }
-}
+/* Section o_mnie */
 
 section.o_mnie{
     display: grid;
@@ -307,15 +119,12 @@ section.o_mnie{
     grid-gap: 10%;
     background-color: #F4F3F1;
     padding:20px 5% 0 5%;
-    height: 100vh;
 }
 section.o_mnie h1{
     grid-row-start: 1;
     grid-column: span 2/-1;
     justify-self: center;
-    font-size: 100px;
-    font-family: 'Caveat', cursive;
-    font-weight: 400;
+    padding-bottom: 30px;
 }
 section.o_mnie div.opis{
     grid-row-end: -1;
@@ -333,103 +142,7 @@ section.o_mnie img{
     border-style: solid;
 }
 
-
-@media (orientation: landscape) and (max-width: 850px){
-    section.o_mnie h1{
-        font-size: 80px;
-    }
-    section.o_mnie div.opis p{
-        font-size: 16px;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 670px){
-    section.o_mnie{
-        grid-template-columns: 50% auto;
-    }
-    section.o_mnie h1{
-        font-size: 60px;
-    }
-    section.o_mnie div.opis p{
-        font-size: 14px;
-    }
-    section.o_mnie img{
-    border-width: 15px 7px 7px 15px;
-    }
-}
-@media (orientation: landscape) and (max-width: 600px){
-    section.o_mnie h1{
-        font-size: 55px;
-    }
-}
-
-@media(orientation: portrait){
-    section.o_mnie{
-        grid-template-columns: 100%;
-        grid-template-rows: 12% auto 50%;
-        grid-gap: 5%;
-    }
-    section.o_mnie h1{
-        grid-row-start: 1;
-        grid-column-start: 1;
-        font-size: 120px;
-    }
-    section.o_mnie div.opis {
-        grid-row-end: -2;
-        grid-column-start: 1;
-    }
-    section.o_mnie div.opis p{
-        font-size: 30px;
-    }
-    section.o_mnie img{
-        grid-row-end: -1;
-        grid-column-start: 1;
-    }
-    
-    
-}
-@media (orientation: portrait) and (max-width: 950px){
-    section.o_mnie h1{
-        font-size: 100px;
-    }
-    section.o_mnie div.opis p{
-        font-size: 20px;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 700px){
-    section.o_mnie h1{
-        font-size: 90px;
-    }
-    section.o_mnie div.opis p{
-        font-size: 18px;
-    }
-    section.o_mnie img{
-        align-self: start;
-        }
-}
-
-@media (orientation: portrait) and (max-width: 500px){
-    section.o_mnie h1{
-        font-size: 80px;
-    }
-    section.o_mnie div.opis p{
-        font-size: 16px;
-    }
-    section.o_mnie img{
-    border-width: 20px 10px 10px 20px;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 320px){
-    section.o_mnie h1{
-        font-size: 60px;
-    }
-    section.o_mnie div.opis p{
-        font-size: 15px;
-    }
-}
-
+/* Section portfolio */
 
 section.portfolio{
     background-color: #F4F3F1;
@@ -438,9 +151,6 @@ section.portfolio{
 
 section.portfolio h1{
     padding: 30px 20px 20px;
-    font-size: 100px;
-    font-family: 'Caveat', cursive;
-    font-weight: 400;
     text-align: center;
 }
 
@@ -490,225 +200,11 @@ div.p_element aside button{
 }
 
 div.p_element aside button:hover{
-    /* background-color: rgba(244, 243, 241, 0.5); */
     background-color:  rgba(215, 144, 135, 0.5);
     cursor: pointer;
 }
 
-@media (orientation: landscape) and (max-width: 1000px){
-    div.p_element aside p{
-        font-size: 18px;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 850px){
-    div.p_element aside h2{
-        font-size: 18px;
-    }
-    div.p_element aside p{
-        font-size: 16px;
-    }
-    div.p_element aside button{
-        font-size: 18px;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 670px){
-    section.portfolio h1{
-        font-size: 90px;
-    }
-    div.p_element aside h2{
-        font-size: 16px;
-    }
-    div.p_element aside p{
-        font-size: 14px;
-    }
-    div.p_element aside button{
-        font-size: 16px;
-    }
-}
-@media (hover: none) and (orientation: landscape){
-    div.elementy div.p_element{
-        position: relative;
-        width: 80%;
-        background-size: 50%;
-        background-repeat: no-repeat;
-    }
-    div.elementy div.p_element aside{
-        position: absolute;
-        left: 60%;
-        height: 90%;
-        opacity: 100%;
-    }
-    div.p_element aside h2{
-        font-size: 26px;
-    }
-    div.p_element aside p{
-        font-size: 24px;
-    }
-    div.p_element aside button{
-        font-size: 26px;
-    }
-}
-
-@media (hover: none) and (orientation: landscape) and (max-width: 1200px){
-    div.p_element aside h2{
-        font-size: 22px;
-    }
-    div.p_element aside p{
-        font-size: 20px;
-    }
-    div.p_element aside button{
-        font-size: 22px;
-    }
-}
-
-@media (hover: none) and (orientation: landscape) and (max-width: 1000px){
-    div.p_element aside h2{
-        font-size: 20px;
-    }
-    div.p_element aside p{
-        font-size: 18px;
-    }
-    div.p_element aside button{
-        font-size: 20px;
-    }
-}
-
-@media (hover: none) and (orientation: landscape) and (max-width: 850px){
-    section.portfolio h1{
-        font-size: 60px;
-    }
-    div.elementy div.p_element{
-        background-size: 40%;
-    }
-    div.elementy div.p_element aside{
-        left: 50%;
-    }
-    div.p_element aside h2{
-        font-size: 17px;
-    }
-    div.p_element aside p{
-        font-size: 15px;
-    }
-    div.p_element aside button{
-        font-size: 15px;
-    }
-}
-
-@media (hover: none) and (orientation: landscape) and (max-width: 670px){
-    div.p_element aside h2{
-        font-size: 15px;
-    }
-    div.p_element aside p{
-        font-size: 12px;
-    }
-    div.p_element aside button{
-        font-size: 12px;
-        border-width: 1px;
-    }
-}
-@media (hover: none) and (orientation: landscape) and (max-width: 600px){
-    div.p_element aside h2{
-        font-size: 14px;
-    }
-    div.p_element aside p{
-        font-size: 11px;
-    }
-    div.p_element aside button{
-        font-size: 11px;
-        padding: 3px 6px;
-    }
-}
-
-@media(orientation: portrait){
-    section.portfolio h1{
-        padding-top: 50px;
-    }
-    section.portfolio div.elementy{
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0 10%;
-    }
-    div.elementy div.p_element{
-        width: 100%;
-    }
-}
-
-@media (hover: none) and (orientation: portrait){
-    div.elementy div.p_element{
-        position: relative;
-        height: 80vh;
-        background-size: auto 50%;
-        background-repeat: no-repeat;
-    }
-    div.elementy div.p_element aside{
-        position: absolute;
-        top: 50%;
-        height: 50%;
-        opacity: 100%;
-    }
-    div.p_element aside h2{
-        font-size: 38px;
-    }
-    div.p_element aside p{
-        font-size: 36px;
-    }
-    div.p_element aside button{
-        font-size: 38px;
-    }
-}
-
-@media (hover: none) and (orientation: portrait) and (max-width: 950px){
-    div.p_element aside h2{
-        font-size: 34px;
-    }
-    div.p_element aside p{
-        font-size: 32px;
-    }
-    div.p_element aside button{
-        font-size: 34px;
-    }
-}
-
-@media (hover: none) and (orientation: portrait) and (max-width: 700px){
-    div.p_element aside h2{
-        font-size: 24px;
-    }
-    div.p_element aside p{
-        font-size: 22px;
-    }
-    div.p_element aside button{
-        font-size: 24px;
-    }
-}
-
-@media (hover: none) and (orientation: portrait) and (max-width: 500px){
-    section.portfolio h1{
-        font-size: 60px;
-    }
-    div.p_element aside h2{
-        font-size: 18px;
-    }
-    div.p_element aside p{
-        font-size: 16px;
-    }
-    div.p_element aside button{
-        font-size: 18px;
-    }
-}
-
-@media (hover: none) and (orientation: portrait) and (max-width: 320px){
-    div.p_element aside h2{
-        font-size: 16px;
-    }
-    div.p_element aside p{
-        font-size: 14px;
-    }
-    div.p_element aside button{
-        font-size: 16px;
-    }
-}
+/* Section kontakt */
 
 section.kontakt{
     background-image: url(photos/tło1.jpg);
@@ -719,17 +215,15 @@ section.kontakt{
 section.kontakt h1{
     padding-top: 20px;
     padding-bottom: 15px;
-    font-size: 100px;
-    font-family: 'Caveat', cursive;
-    font-weight: 400;
     text-align: center;
 }
 
 form{
     display: grid;
-    grid-template-columns: 30vw 30vw;
+    width: 85vw;
+    grid-template-columns: 40% auto;
     grid-gap: 15px;
-    padding-left: 20vw;
+    margin: 0 auto;
 }
 
 label{
@@ -756,6 +250,9 @@ button.wyslij{
     background-color: transparent;
 }
 
+label{
+    grid-column: span 2/-1;
+}
 label.name{
     grid-column: 1;
 }
@@ -763,16 +260,12 @@ label.lastname{
     grid-column: 2;
 }
 
-label.email, label.temat, label.tresc{
-    grid-column: span 2/-1;
-}
-
 label.tresc{
     display: flex;
     justify-content: flex-start;
 }
 input.name, input.lastname{
-    width: 70%;
+    width: 75%;
 }
 
 input.email{
@@ -780,7 +273,7 @@ input.email{
 }
 
 input.temat{
-    width: 80%;
+    width: 70%;
 }
 label.tresc p{
     align-items: flex-start;
@@ -791,3 +284,490 @@ textarea.tresc{
     height: 20vh;
 }
 
+/* @media */
+
+@media (orientation: landscape) and (max-width: 1200px){
+    /* header */
+    img.komputer{
+        right: 7%;
+    }
+    div.content{
+        left:7%;
+    }
+}
+@media (orientation: landscape) and (max-width: 1000px){
+    *{
+        font-size: 20px;
+    }
+    /* header */
+    p.witaj{
+        font-size: 115px;
+    }
+    p.job, h1.name{
+        font-size: 25px;
+    }
+    a.button{
+        font-size: 35px;
+        border-width: 3px 5px;
+    }
+    img.komputer{
+        top:35%;
+    }
+
+    /* section portfiolio */
+    div.p_element aside p{
+        font-size: 18px;
+    }
+}
+@media (orientation: landscape) and (max-width: 850px){
+    *{
+        font-size: 16px;
+    }
+    h1.naglowek{
+        font-size: 80px;
+    }
+    
+    /* header */
+    div.text{
+        top:5%;
+    }
+    div.text p.witaj{
+        font-size: 100px;
+    }
+    p.job, h1.name{
+        font-size: 20px;
+    }
+    a.button{
+        font-size: 30px;
+    }
+
+    /* section portfolio */
+    div.p_element aside h2{
+        font-size: 18px;
+    }
+    div.p_element aside button{
+        font-size: 18px;
+    }
+}
+@media (orientation: landscape) and (max-width: 832px){
+    /* header */
+    nav.menu{
+        padding-top: 1%;
+    }
+    a.button{
+        top: 77%;
+    }
+}
+@media (orientation: landscape) and (max-width: 670px){
+    *{
+        font-size: 14px;
+    }
+    /* header */
+    ul.menu li a{
+        font-size: 18px;
+    }
+    div.text p.witaj{
+        padding-bottom: 7%;
+        font-size: 80px;
+    }
+    p.job, h1.name{
+        font-size: 18px;
+    }
+    a.button{
+        font-size: 25px;
+    }
+    img.komputer{
+        border-width: 5px 7px;
+    }
+
+    /* section o_mnie */
+    section.o_mnie{
+        grid-template-columns: 50% auto;
+    }
+    section.o_mnie img{
+    border-width: 15px 7px 7px 15px;
+    }
+
+    /* section portfolio */
+    
+    div.p_element aside h2{
+        font-size: 16px;
+    }
+    div.p_element aside button{
+        font-size: 16px;
+    }
+}
+@media (orientation: landscape) and (max-width: 600px){
+    /* header */
+    ul.menu li a{
+        font-size: 14px;
+    }
+    div.text p.witaj{
+        padding-bottom: 10%;
+        font-size: 65px;
+    }
+    p.job, h1.name{
+        font-size: 16px;
+    }
+    a.button{
+        font-size: 20px;
+        border-width: 2px 4px;
+    }
+}
+
+@media (hover: none) and (orientation: landscape){
+    div.elementy div.p_element{
+        position: relative;
+        width: 80%;
+        background-size: 50%;
+        background-repeat: no-repeat;
+    }
+    div.elementy div.p_element aside{
+        position: absolute;
+        left: 60%;
+        height: 90%;
+        opacity: 100%;
+    }
+    div.p_element aside h2{
+        font-size: 26px;
+    }
+    div.p_element aside p{
+        font-size: 24px;
+    }
+    div.p_element aside button{
+        font-size: 26px;
+    }
+}
+@media (hover: none) and (orientation: landscape) and (max-width: 1200px){
+    div.p_element aside h2{
+        font-size: 22px;
+    }
+    div.p_element aside p{
+        font-size: 20px;
+    }
+    div.p_element aside button{
+        font-size: 22px;
+    }
+}
+@media (hover: none) and (orientation: landscape) and (max-width: 1000px){
+    /* div.p_element aside h2{
+        font-size: 20px;
+    } */
+    div.p_element aside p{
+        font-size: 18px;
+    }
+    /* div.p_element aside button{
+        font-size: 20px;
+    } */
+}
+@media (hover: none) and (orientation: landscape) and (max-width: 850px){
+    h1.naglowek{
+        font-size: 60px;
+    }
+    /* portfolio */
+    div.elementy div.p_element{
+        background-size: 40%;
+    }
+    div.elementy div.p_element aside{
+        left: 50%;
+    }
+    div.p_element aside h2{
+        font-size: 17px;
+    }
+    div.p_element aside p{
+        font-size: 15px;
+    }
+    div.p_element aside button{
+        font-size: 15px;
+    }
+}
+@media (hover: none) and (orientation: landscape) and (max-width: 670px){
+    div.p_element aside h2{
+        font-size: 15px;
+    }
+    div.p_element aside p{
+        font-size: 12px;
+    }
+    div.p_element aside button{
+        font-size: 12px;
+        border-width: 1px;
+    }
+}
+@media (hover: none) and (orientation: landscape) and (max-width: 600px){
+    h1.naglowek{
+        font-size: 55px;
+    }
+    div.p_element aside h2{
+        font-size: 14px;
+    }
+    div.p_element aside p{
+        font-size: 11px;
+    }
+    div.p_element aside button{
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+}
+
+@media(orientation: portrait){
+    *{
+        font-size:30px;
+    }
+    h1.naglowek{
+        font-size: 120px;
+    }
+    /* header */
+    ul.menu li a{
+        font-size: 25px;
+    }
+    div.content{
+        width: 80vw;
+        height: 45vh;
+    }
+    div.text{
+        text-align: center;
+        width: 100%;
+        left:0%;
+    }
+    p.witaj{
+        font-size: 160px;
+    }
+    p.job, h1.name{
+        font-size: 40px;
+    }
+    a.button{
+        font-size: 45px;
+        left:35%;
+        top: 75%;
+    }
+    img.komputer{
+        width: 80vw;
+        top: 57%;
+        right:10%;
+    }
+
+    /* section o_mnie */
+    section.o_mnie{
+        grid-template-columns: 100%;
+        grid-template-rows: 12% auto 50%;
+        grid-gap: 5%;
+    }
+    section.o_mnie h1{
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    section.o_mnie div.opis {
+        grid-row-end: -2;
+        grid-column-start: 1;
+    }
+    
+    section.o_mnie img{
+        grid-row-end: -1;
+        grid-column-start: 1;
+    }
+
+    /* section portfolio */
+    section.portfolio h1{
+        padding-top: 50px;
+    }
+    section.portfolio div.elementy{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+    div.elementy div.p_element{
+        width: 100%;
+    }
+
+    /* section kontakt */
+    form{
+        grid-template-columns: 100%; 
+    }
+    label{
+        grid-column: 1;
+    }
+    label.lastname{
+        grid-column: 1;
+    }
+    input.name{
+        width: 60%;
+    }
+}
+@media (orientation: portrait) and (max-width: 950px){
+    h1.naglowek{
+        font-size: 100px;
+    }
+    *{
+        font-size:25px;
+    }
+    /* header */
+    ul.menu li a{
+        font-size: 20px;
+    }
+    p.witaj{
+        font-size: 150px;
+    }
+    p.job, h1.name{
+        font-size: 35px;
+    }
+    a.button{
+        font-size: 40px;
+        top: 85%;
+    }
+}
+@media (orientation: portrait) and (max-width: 700px){
+    h1.naglowek{
+        font-size: 90px;
+    }
+    *{
+        font-size: 20px;
+    }
+    /* header */
+    nav.menu{
+        padding-top: 3%;
+    }
+    ul.menu li a{
+        font-size: 16px;
+    }
+    div.text{
+        top: 5%;
+    }
+    p.witaj{
+        padding-bottom: 5%;
+        font-size: 100px;
+    }
+    p.job, h1.name{
+        font-size: 20px;
+    }
+    a.button{
+        font-size: 25px;
+    }
+    img.komputer{
+        width: 60vw;
+        right:20%;
+        bottom: 5%;
+        top: auto;
+    }
+
+    /* section o_mnie */
+    section.o_mnie img{
+        align-self: start;
+    }
+}
+@media (orientation: portrait) and (max-width: 500px){
+    h1.naglowek{
+        font-size: 80px;
+    }
+    *{
+        font-size:16px;
+    }
+    /* header */
+    ul.menu li a{
+        font-size: 14px;
+    }
+    a.button{
+        left:30.5%;
+    }
+
+    /* section o_mnie */
+    section.o_mnie img{
+    border-width: 20px 10px 10px 20px;
+    }
+}
+@media (orientation: portrait) and (max-width: 450px){
+    h1.naglowek{
+        font-size: 70px;
+    }
+    /* header */
+    nav.menu{
+        padding-top: 5%;
+    }
+    ul.menu li a{
+        font-size: 16px;
+    }
+    img.komputer{
+        width: 80vw;
+        right:10%;
+        bottom: 5%;
+        top: auto;
+    }
+}
+@media (orientation: portrait) and (max-width: 320px){
+    h1.naglowek{
+        font-size: 60px;
+    }
+    *{
+        font-size: 14px;
+    }
+    /* header */
+    ul.menu li a{
+        font-size: 14px;
+    }
+    p.witaj{
+        font-size: 80px;
+    }
+    p.job, h1.name{
+        font-size: 18px;
+    }
+    a.button{
+        border-width: 2px 4px;
+    }
+    img.komputer{
+        border-width: 5px 7px;
+    }
+}
+
+
+@media (hover: none) and (orientation: portrait){
+    div.elementy div.p_element{
+        position: relative;
+        height: 80vh;
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+    }
+    div.elementy div.p_element aside{
+        position: absolute;
+        top: 50%;
+        height: 50%;
+        opacity: 100%;
+    }
+    div.p_element aside h2{
+        font-size: 38px;
+    }
+    
+    div.p_element aside button{
+        font-size: 38px;
+    }
+}
+@media (hover: none) and (orientation: portrait) and (max-width: 950px){
+    div.p_element aside h2{
+        font-size: 34px;
+    }
+    div.p_element aside button{
+        font-size: 34px;
+    }
+}
+@media (hover: none) and (orientation: portrait) and (max-width: 700px){
+    div.p_element aside h2{
+        font-size: 24px;
+    }
+    div.p_element aside button{
+        font-size: 24px;
+    }
+}
+@media (hover: none) and (orientation: portrait) and (max-width: 500px){
+    div.p_element aside h2{
+        font-size: 18px;
+    }
+    div.p_element aside button{
+        font-size: 18px;
+    }
+}
+@media (hover: none) and (orientation: portrait) and (max-width: 320px){
+    div.p_element aside h2{
+        font-size: 16px;
+    }
+    div.p_element aside button{
+        font-size: 16px;
+    }
+}
