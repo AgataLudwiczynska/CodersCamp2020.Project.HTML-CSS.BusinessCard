@@ -429,7 +429,7 @@ textarea.tresc{
     div.elementy div.p_element aside{
         position: absolute;
         left: 60%;
-        height: 90%;
+        height: 95%;
         opacity: 100%;
     }
     div.p_element aside h2{
@@ -476,24 +476,24 @@ textarea.tresc{
         left: 50%;
     }
     div.p_element aside h2{
-        font-size: 17px;
+        font-size: 15px;
     }
     div.p_element aside p{
         font-size: 13px;
     }
     div.p_element aside button{
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 @media (hover: none) and (orientation: landscape) and (max-width: 670px){
     div.p_element aside h2{
-        font-size: 15px;
+        font-size: 13px;
     }
     div.p_element aside p{
         font-size: 10px;
     }
     div.p_element aside button{
-        font-size: 12px;
+        font-size: 10px;
         border-width: 1px;
     }
 }
@@ -502,13 +502,13 @@ textarea.tresc{
         font-size: 55px;
     }
     div.p_element aside h2{
-        font-size: 14px;
+        font-size: 12px;
     }
     div.p_element aside p{
         font-size: 9px;
     }
     div.p_element aside button{
-        font-size: 11px;
+        font-size: 10px;
         padding: 3px 6px;
     }
 }
