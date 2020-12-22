@@ -132,6 +132,10 @@ section.o_mnie div.opis{
     align-self: center;
     text-align: justify;
 }
+section.o_mnie div.opis p{
+    line-height: 135%;
+    text-indent: 15px;
+}
 section.o_mnie img{
     grid-row-end: -1;
     grid-column-start: 2;
@@ -146,7 +150,7 @@ section.o_mnie img{
 
 section.portfolio{
     background-color: #F4F3F1;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
 }
 
 section.portfolio h1{
@@ -155,7 +159,6 @@ section.portfolio h1{
 }
 
 section.portfolio div.elementy{
-    margin-top: 7%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -210,6 +213,7 @@ section.kontakt{
     background-image: url(photos/tło1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 40px;
 }
 
 section.kontakt h1{
@@ -250,6 +254,10 @@ button.wyslij{
     background-color: transparent;
 }
 
+button.wyslij:hover{
+    border-color:rgb(215, 144, 135);
+}
+
 label{
     grid-column: span 2/-1;
 }
@@ -282,6 +290,17 @@ label.tresc p{
 textarea.tresc{
     width: 80%;
     height: 20vh;
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(215, 144, 135);
+    height:10vh;
+}
+footer p{
+    line-height: 10vh;
+    text-align: center;
 }
 
 /* @media */
@@ -328,9 +347,7 @@ textarea.tresc{
     }
     
     /* header */
-    div.text{
-        top:5%;
-    }
+    
     div.text p.witaj{
         font-size: 100px;
     }
@@ -467,6 +484,10 @@ textarea.tresc{
 @media (hover: none) and (orientation: landscape) and (max-width: 850px){
     h1.naglowek{
         font-size: 60px;
+    }
+    /* header */
+    div.text{
+        top:5%;
     }
     /* portfolio */
     div.elementy div.p_element{
